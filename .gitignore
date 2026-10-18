@@ -14,3 +14,7 @@ data/real/online_retail.zip
 data/real/online_retail_raw.parquet
 .coverage
 htmlcov/
+extras/source/build/
+
+# presentation material is kept locally, not in the repository
+extras/

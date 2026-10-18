@@ -234,12 +234,12 @@ with tabs[0]:
 
     def status(d):
         if d <= 0:
-            return "🔴 Out of stock"
+            return "Out of stock"
         if d < LOW:
-            return "🟠 Running low"
+            return "Running low"
         if d > OVER:
-            return "🔵 Too much stock"
-        return "🟢 Healthy"
+            return "Too much stock"
+        return "Healthy"
 
     view = products.drop(columns=["stock_units"], errors="ignore").merge(   # current stock, not the starting stock
         sm.reset_index()[["product_id", "stock_units", "avg_daily_sales", "days_of_stock"]], on="product_id")

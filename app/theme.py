@@ -1,10 +1,10 @@
-"""BidPilot look and feel: a block-print textile identity for a shop that sells home textiles.
+"""BidPilot look and feel: formal and minimal, with one quiet textile reference.
 
-Palette (taken from indigo / madder / marigold block-printed cloth):
-  indigo #1E2A78 main, deep indigo #141C52, marigold #F4A51C = needs your attention, madder #B3263E = loss / pause,
-  leaf #1F8A5B = profit / healthy, loom white #F6F7FB background, ink #1A1D33 text, thread #5B6178 secondary text.
-Patterns: a block-print lattice in the top banner (the one loud element), a faint woven gingham in the sidebar,
-and stitched (dashed) borders on the "How this works" boxes. Everything else stays quiet.
+Palette: navy #13294B main, deep navy #0B1A33, muted gold #A16207 = needs your attention, oxblood #9F1D2B =
+loss / pause, forest #1E6B4E = profit / healthy, paper #F5F6F8 background, ink #0F172A text, slate #475569
+secondary text. Pattern: a fine, low-contrast herringbone weave in the banner (the one textile reference) and a
+faint pinstripe in the sidebar. Cards are flat white with a hairline border, no fills, no shadows.
+Type: IBM Plex Serif for headings, IBM Plex Sans for everything else.
 """
 from __future__ import annotations
 
@@ -12,11 +12,11 @@ import html
 
 import streamlit as st
 
-INDIGO, DEEP, MARIGOLD, MADDER, LEAF = "#1E2A78", "#141C52", "#F4A51C", "#B3263E", "#1F8A5B"
-LOOM, INK, THREAD = "#F6F7FB", "#1A1D33", "#5B6178"
+INDIGO, DEEP, MARIGOLD, MADDER, LEAF = "#13294B", "#0B1A33", "#A16207", "#9F1D2B", "#1E6B4E"
+LOOM, INK, THREAD = "#F5F6F8", "#0F172A", "#475569"
 STRATEGY_NAMES = {"fixed": "No changes (fixed bids)", "rules": "Simple rules", "agent": "BidPilot",
                   "agent_nollm": "BidPilot"}
-STRATEGY_COLORS = {"No changes (fixed bids)": "#9AA0B4", "Simple rules": MARIGOLD, "BidPilot": INDIGO}
+STRATEGY_COLORS = {"No changes (fixed bids)": "#A3AAB8", "Simple rules": "#B08D57", "BidPilot": INDIGO}
 
 GLOSSARY = {
     "Bid": "The most you agree to pay when someone clicks your ad.",
@@ -34,93 +34,92 @@ GLOSSARY = {
 
 CSS = f"""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap');
 :root {{
-  --indigo:{INDIGO}; --deep:{DEEP}; --marigold:{MARIGOLD}; --madder:{MADDER}; --leaf:{LEAF};
-  --loom:{LOOM}; --ink:{INK}; --thread:{THREAD}; --line:#DDE1EE;
+  --indigo:{INDIGO}; --deep:{DEEP}; --gold:{MARIGOLD}; --madder:{MADDER}; --leaf:{LEAF};
+  --paper:{LOOM}; --ink:{INK}; --slate:{THREAD}; --line:#E2E5EA;
 }}
-html, body, .stApp, .stMarkdown, button, input, textarea, select, [data-testid="stMetricValue"] {{
-  font-family: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+html, body, .stApp, .stMarkdown, button, input, textarea, select {{
+  font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }}
-h1, h2, h3, h4, .bp-title {{ font-family: 'Bricolage Grotesque', 'Public Sans', system-ui, sans-serif;
-  letter-spacing: -0.01em; color: var(--ink); }}
-.stApp {{ background: var(--loom); color: var(--ink); }}
-[data-testid="stMetricValue"], .bp-num {{ font-variant-numeric: tabular-nums; }}
+h1, h2, h3, h4, .bp-title {{ font-family: 'IBM Plex Serif', Georgia, serif; font-weight:600;
+  letter-spacing:-0.005em; color: var(--ink); }}
+.stApp {{ background: var(--paper); color: var(--ink); }}
 [data-testid="stMetricValue"], [data-testid="stMetricValue"] * {{
-  font-family:'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif !important;
-  font-size:1.7rem !important; font-weight:600 !important; color:var(--ink); }}
-[data-testid="stMetricLabel"] * {{ color:var(--thread); }}
+  font-family:'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif !important;
+  font-size:1.6rem !important; font-weight:500 !important; color:var(--indigo); font-variant-numeric: tabular-nums; }}
+[data-testid="stMetricLabel"] * {{ color:var(--slate); font-size:.85rem; }}
 
-/* sidebar: faint woven gingham */
+/* sidebar: faint pinstripe */
 [data-testid="stSidebar"] {{
-  background-color: #EEF0F8;
-  background-image:
-    repeating-linear-gradient(0deg, rgba(30,42,120,.045) 0 6px, transparent 6px 14px),
-    repeating-linear-gradient(90deg, rgba(30,42,120,.045) 0 6px, transparent 6px 14px);
+  background-color: #F0F2F5;
+  background-image: repeating-linear-gradient(90deg, rgba(19,41,75,.035) 0 1px, transparent 1px 9px);
+  border-right: 1px solid var(--line);
 }}
 
-/* banner with block-print lattice */
-.bp-hero {{ display:grid; grid-template-columns:minmax(0,1fr) 240px; border-radius:18px; overflow:hidden;
+/* banner: navy with a fine herringbone weave */
+.bp-hero {{ display:grid; grid-template-columns:minmax(0,1fr) 220px; border-radius:8px; overflow:hidden;
   background:var(--indigo); margin:4px 0 14px 0; }}
-.bp-hero-text {{ padding:20px 24px 18px; color:#fff; }}
-.bp-hero-text .bp-title {{ color:#fff; font-size:2rem; font-weight:700; line-height:1.1; margin:0 0 6px; }}
-.bp-hero-text p {{ margin:0 0 12px; color:#DCE0F5; max-width:62ch; line-height:1.45; }}
+.bp-hero-text {{ padding:22px 26px 18px; color:#fff; }}
+.bp-hero-text .bp-title {{ color:#fff; font-size:1.9rem; line-height:1.15; margin:0 0 6px; }}
+.bp-hero-text p {{ margin:0 0 14px; color:#C9D3E3; max-width:62ch; line-height:1.5; }}
 .bp-pattern {{
   background-color: var(--deep);
   background-image:
-    radial-gradient(circle, var(--marigold) 0 3px, transparent 3.6px),
-    radial-gradient(circle, var(--madder) 0 5px, transparent 5.6px),
-    repeating-linear-gradient(45deg, rgba(255,255,255,.13) 0 2px, transparent 2px 19.8px),
-    repeating-linear-gradient(-45deg, rgba(255,255,255,.13) 0 2px, transparent 2px 19.8px);
-  background-size: 28px 28px, 28px 28px, auto, auto;
-  background-position: 0 0, 14px 14px, 0 0, 0 0;
+    repeating-linear-gradient(45deg, rgba(255,255,255,.07) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,.07) 0 1px, transparent 1px 8px);
+  background-size: 16px 32px, 16px 32px;
+  background-position: 0 0, 8px 16px;
 }}
-.bp-chip {{ display:inline-flex; align-items:center; gap:7px; padding:5px 11px; margin:0 6px 6px 0;
-  border-radius:999px; background:rgba(255,255,255,.13); color:#fff; font-size:.88rem; }}
-.bp-dot {{ width:9px; height:9px; border-radius:50%; display:inline-block; }}
-.bp-dot.ok {{ background:var(--leaf); box-shadow:0 0 0 2px rgba(255,255,255,.55); }}
-.bp-dot.warn {{ background:var(--marigold); }}
-.bp-dot.bad {{ background:var(--madder); box-shadow:0 0 0 2px rgba(255,255,255,.55); }}
-.bp-dot.off {{ background:#9AA0B4; }}
+.bp-chip {{ display:inline-flex; align-items:center; gap:7px; padding:4px 10px; margin:0 6px 6px 0;
+  border-radius:4px; border:1px solid rgba(255,255,255,.22); color:#E6EBF3; font-size:.85rem; }}
+.bp-dot {{ width:7px; height:7px; border-radius:50%; display:inline-block; }}
+.bp-dot.ok {{ background:#7FC4A4; }}
+.bp-dot.warn {{ background:#E3B562; }}
+.bp-dot.bad {{ background:#E08A93; }}
+.bp-dot.off {{ background:#A3AAB8; }}
 
-/* next-step hint: marigold = something for you to do */
-.bp-next {{ border:1px solid var(--marigold); background:#FFF5E0; border-radius:12px; padding:10px 14px;
-  margin:0 0 12px; color:var(--ink); }}
-.bp-next b {{ color:#8A5300; }}
+/* next step: quiet, with a gold marker */
+.bp-next {{ border:1px solid var(--line); background:#fff; border-radius:8px; padding:10px 14px; margin:0 0 14px;
+  color:var(--ink); }}
+.bp-next b {{ color:var(--gold); font-weight:600; }}
 
-/* stitched explainer boxes */
-.bp-stitch {{ border:2px dashed rgba(30,42,120,.32); border-radius:14px; padding:12px 16px; margin:4px 0 12px;
-  background:#FBFBFE; color:var(--ink); line-height:1.5; }}
-.bp-lead {{ color:var(--thread); font-size:1.02rem; margin:2px 0 12px; max-width:75ch; line-height:1.5; }}
+/* explainer boxes */
+.bp-stitch {{ border:1px dashed #C5CBD6; border-radius:8px; padding:12px 16px; margin:4px 0 12px;
+  background:#FBFBFC; color:var(--ink); line-height:1.55; }}
+.bp-lead {{ color:var(--slate); font-size:1rem; margin:2px 0 14px; max-width:75ch; line-height:1.55; }}
 
-/* bid change line */
-.bp-move {{ font-size:1.05rem; }}
-.bp-move .old {{ color:var(--thread); text-decoration:line-through; }}
-.bp-move .new {{ font-weight:700; }}
-.bp-tag {{ display:inline-block; padding:2px 9px; border-radius:999px; font-size:.82rem; font-weight:600;
-  margin-right:6px; border:1px solid transparent; }}
-.bp-tag.up {{ background:#E3F4EC; color:#14603F; border-color:#BFE3D0; }}
-.bp-tag.down {{ background:#FBE7EA; color:#8E1C30; border-color:#F2C6CE; }}
-.bp-tag.pause {{ background:#ECEDF3; color:#3B4060; border-color:#D5D8E5; }}
-.bp-tag.you {{ background:#FFF0CC; color:#7A4A00; border-color:#F7D58A; }}
-.bp-tag.info {{ background:#E8EBF8; color:var(--indigo); border-color:#CDD3EE; }}
+/* bid change line and tags: outlined, no fills */
+.bp-move {{ font-size:1rem; }}
+.bp-move .old {{ color:var(--slate); text-decoration:line-through; }}
+.bp-move .new {{ font-weight:600; color:var(--ink); }}
+.bp-tag {{ display:inline-block; padding:1px 8px; border-radius:4px; font-size:.78rem; font-weight:500;
+  margin-right:6px; border:1px solid var(--line); color:var(--slate); background:#fff; }}
+.bp-tag.up {{ color:var(--leaf); border-color:#BFD8CB; }}
+.bp-tag.down {{ color:var(--madder); border-color:#E8C3C8; }}
+.bp-tag.pause {{ color:var(--slate); }}
+.bp-tag.you {{ color:var(--gold); border-color:#E9D3A6; }}
+.bp-tag.info {{ color:var(--indigo); border-color:#CBD3E1; }}
 
-/* calm containment for metrics and bordered groups */
-[data-testid="stMetric"] {{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 14px; }}
-[data-testid="stVerticalBlockBorderWrapper"] {{ border-radius:14px; }}
-.stTabs [data-baseweb="tab-list"] {{ gap:4px; flex-wrap:wrap; }}
-.stTabs [data-baseweb="tab"] {{ font-weight:600; }}
+/* cards: flat white, hairline border, no shadow */
+[data-testid="stMetric"] {{ background:#fff; border:1px solid var(--line); border-radius:8px; padding:12px 16px; }}
+[data-testid="stVerticalBlockBorderWrapper"] {{ border-radius:8px !important; border-color:var(--line) !important;
+  background:#fff; }}
+[data-testid="stExpander"] details {{ border-radius:8px; border-color:var(--line); background:#fff; }}
+.stTabs [data-baseweb="tab-list"] {{ gap:2px; flex-wrap:wrap; border-bottom:1px solid var(--line); }}
+.stTabs [data-baseweb="tab"] {{ font-weight:500; color:var(--slate); }}
 .stTabs [aria-selected="true"] {{ color:var(--indigo); }}
-.stTabs [data-baseweb="tab-highlight"] {{ background-color:var(--marigold); height:3px; }}
+.stTabs [data-baseweb="tab-highlight"] {{ background-color:var(--indigo); height:2px; }}
+.stButton button, .stFormSubmitButton button, [data-testid="stPopover"] button {{ border-radius:6px; }}
 
 /* keyboard focus must always be visible */
 button:focus-visible, [role="tab"]:focus-visible, input:focus-visible, a:focus-visible,
-[data-baseweb="select"]:focus-within {{ outline:3px solid var(--marigold) !important; outline-offset:2px; }}
+[data-baseweb="select"]:focus-within {{ outline:2px solid var(--gold) !important; outline-offset:2px; }}
 
 @media (max-width: 760px) {{
   .bp-hero {{ grid-template-columns:1fr; }}
-  .bp-pattern {{ height:22px; order:-1; }}
-  .bp-hero-text .bp-title {{ font-size:1.6rem; }}
+  .bp-pattern {{ height:18px; order:-1; }}
+  .bp-hero-text .bp-title {{ font-size:1.55rem; }}
 }}
 @media (prefers-reduced-motion: reduce) {{ * {{ animation:none !important; transition:none !important; }} }}
 </style>
@@ -179,10 +178,10 @@ def bid_move(action: str, old: float, new: float, change_pct: float) -> str:
 
 
 def style_fig(fig, height: int = 380):
-    fig.update_layout(font_family="Public Sans, system-ui, sans-serif", font_color=INK, height=height,
+    fig.update_layout(font_family="IBM Plex Sans, system-ui, sans-serif", font_color=INK, height=height,
                       plot_bgcolor="#FFFFFF", paper_bgcolor="rgba(0,0,0,0)", margin=dict(l=10, r=10, t=50, b=10),
                       legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0, title_text=""),
-                      title_font_family="Bricolage Grotesque, Public Sans, sans-serif")
-    fig.update_xaxes(gridcolor="#EEF0F6", zeroline=False)
-    fig.update_yaxes(gridcolor="#EEF0F6", zeroline=False)
+                      title_font_family="IBM Plex Serif, Georgia, serif")
+    fig.update_xaxes(gridcolor="#EEF0F3", zeroline=False, linecolor="#E2E5EA")
+    fig.update_yaxes(gridcolor="#EEF0F3", zeroline=False)
     return fig

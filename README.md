@@ -49,6 +49,23 @@ answers the six preset questions with reviewed code, and the consultant is skipp
 `BIDPILOT_LOG_LEVEL`. Key settings: `platform: generic | amazon | google` (rule profile), `objectives`
 (per-product growth push with an ACOS cap), `rollback`, `experiments`, `guardrails`.
 
+## The dashboard
+
+Eight pages in plain language: **Your store, Today's bids, Results, Weekly advice, Ask a question, Experiments,
+Real ads check, Speed**. A status banner always shows the day, whether the AI is connected and how many changes
+wait for you, with a *Next step* hint. **Simple view** (default) keeps to plain words; **Detailed view** (sidebar)
+adds IDs, code, statistics and full tables. Every technical term has a hover explanation and a glossary; risky
+actions (reset, switching store) ask for confirmation; big bid changes can be approved or rejected one by one or all
+at once. The look is taken from block-printed textiles (indigo, madder, marigold) to match a home-textiles shop.
+
+## Speed
+
+Measured on an AMD Ryzen 5 7430U laptop (Radeon iGPU, llama.cpp Vulkan, Qwen2.5-3B): daily bidding for 160 ads
+takes 6.8 min with BidPilot vs about 20.9 min with one AI call per ad (3.1x). Estimated on one **AMD Instinct MI300X
+with vLLM and Qwen2.5-32B** (`python -m cli estimate-speed`, a roofline estimate from the measured workload, not a
+measurement): about **7-10 s vs 152-250 s (about 21-24x)**, and the weekly analysis about 3.2-3.5 s side by side vs
+8.4-9.0 s one by one. Confirm on the GPU with `python -m cli bench`.
+
 ## Results in simulation (seed 42, no LLM)
 
 | Strategy | Total contribution profit | Ad-attributed profit | Total sales | Ad spend | ACOS | Stock availability | Ad spend while out of stock |
@@ -134,7 +151,7 @@ sentence with a number is checked against its source.
 
 ## Quality
 
-`ruff check .` and `pytest` (131 tests, 93% coverage, 25/25 planted bugs caught - see docs/TESTING.md: simulator, engine, guardrails, LLM client against a fake
+`ruff check .` and `pytest` (136 tests, 93% coverage, 25/25 planted bugs caught - see docs/TESTING.md: simulator, engine, guardrails, LLM client against a fake
 OpenAI-compatible server, sandbox escapes, research quote checks, consultant citation checks, experiments,
 rollback, platform profiles, config validation, CLI end to end, dashboard via Streamlit AppTest) run in GitHub
 Actions (`.github/workflows/ci.yml`).

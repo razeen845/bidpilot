@@ -81,7 +81,31 @@ def test_consultant_tab_renders_ranked_report(cfg, fresh_store, monkeypatch):
     at = AppTest.from_file(APP, default_timeout=120)
     at.run()
     assert not at.exception, at.exception
-    heads = [m.value for m in at.markdown if m.value.startswith("### #")]
-    assert heads and heads[0].startswith("### #1")
+    heads = [m.value for m in at.markdown if m.value.startswith("#### ") and ". " in m.value]
+    assert heads and heads[0].startswith("#### 1. ")          # ranked: the most important advice first
     assert any("**Risk:**" in m.value for m in at.markdown)
-    assert any(c.value.startswith("External evidence") for c in at.caption)
+    assert any(c.value.startswith("Proof from the web") for c in at.caption)
+    assert any(c.value.startswith("Proof from your data") for c in at.caption)
+
+
+def test_simple_and_detailed_views(app):
+    """Detailed view adds technical columns; simple view keeps plain words."""
+    at, _ = app
+    simple_cols = list(at.dataframe[0].value.columns)
+    assert "Contribution margin" not in simple_cols and "Status" in simple_cols
+    at.sidebar.toggle[0].set_value(True).run()
+    assert not at.exception, at.exception
+    assert "Contribution margin" in list(at.dataframe[0].value.columns)
+
+
+def test_bulk_approve_and_status_banner(app):
+    at, out = app
+    _button(at, "Plan day 1").click().run()
+    assert any("waiting for you" in m.value for m in at.markdown)          # banner shows the pending count
+    _button(at, "Approve all").click().run()
+    radios = [r for r in at.radio if r.key and r.key.startswith("dec_1_")]
+    assert radios and all(r.value == "approve" for r in radios)
+    _button(at, "Apply decisions").click().run()
+    assert not at.exception, at.exception
+    dec = json.loads((out / "day_1_decisions.json").read_text())
+    assert dec and set(dec.values()) == {"approve"}

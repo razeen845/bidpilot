@@ -2,7 +2,7 @@
 
 Checked 2026-10-18.
 
-- **131 automated tests**, all passing (`pytest`), plus `ruff` lint. CI runs both on every push.
+- **136 automated tests**, all passing (`pytest`), plus `ruff` lint. CI runs both on every push.
 - **93% line coverage** of the product code (optimizer, metrics and simulator 100%, guardrails 98%).
 - **Mutation testing: 25 / 25 planted bugs caught.** `scripts/mutation_test.py` copies the project, plants one
   realistic bug at a time in the safety-critical logic and checks that the test suite fails.

@@ -1,0 +1,33 @@
+{
+ "hardware": "AMD Instinct MI300X (vLLM, ROCm)",
+ "model": "Qwen2.5-32B-Instruct (BF16)",
+ "is_estimate": true,
+ "method": "roofline model (memory-bound decode, compute-bound prefill) on the workload measured on the laptop; low/high = conservative/well-tuned vLLM efficiency",
+ "measured_on": "AMD Radeon Graphics (Ryzen 5 7430U laptop, Vulkan via llama.cpp)",
+ "concurrency": 32,
+ "range": {
+  "low": {
+   "bidding_naive_s": 250.0,
+   "bidding_bidpilot_s": 10.4,
+   "consultant_sequential_s": 9.0,
+   "consultant_parallel_s": 3.5,
+   "speedup_bidding": 24.1,
+   "speedup_consultant": 2.6,
+   "single_stream_tokens_per_s": 32.3,
+   "batch32_total_tokens_per_s": 996.0,
+   "prefill_tokens_per_s": 5979.0
+  },
+  "high": {
+   "bidding_naive_s": 152.0,
+   "bidding_bidpilot_s": 7.1,
+   "consultant_sequential_s": 8.4,
+   "consultant_parallel_s": 3.2,
+   "speedup_bidding": 21.3,
+   "speedup_consultant": 2.6,
+   "single_stream_tokens_per_s": 52.5,
+   "batch32_total_tokens_per_s": 1618.0,
+   "prefill_tokens_per_s": 9965.0
+  }
+ },
+ "how_to_confirm": "python -m cli bench   (on the MI300X with LLM_BASE_URL pointing at vLLM)"
+}

@@ -27,7 +27,7 @@
 - **Streamlit** dashboard, **Plotly** and **Matplotlib** charts
 - Command line interface (argparse)
 - **Docker / Docker Compose**, **GitHub Actions** CI
-- **pytest** (131 tests, 93% coverage, 25/25 planted bugs caught), **ruff** linting
+- **pytest** (136 tests, 93% coverage, 25/25 planted bugs caught), **ruff** linting
 
 ## Data
 - **UCI Online Retail** (real UK online retailer, CC BY 4.0) - real products, prices and daily demand

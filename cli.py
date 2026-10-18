@@ -20,6 +20,7 @@ Ops:
   validate-config     check config.yaml and print the effective platform profile
   check-llm           one chat + one JSON-schema request against the configured endpoint
   bench               speed test (on the AMD box); --dry-run uses a fake server
+  estimate-speed      estimate speed on AMD Instinct MI300X + vLLM from the measured workload (an estimate)
   dashboard           start the Streamlit dashboard
   demo                prepare demo data (race, preset analyses, day-7 report if the LLM is up) and start the dashboard
 """
@@ -225,6 +226,10 @@ def cmd_bench(cfg, args):
     sys.exit(subprocess.call([sys.executable, str(ROOT / "bench" / "latency.py"), "--runs", str(args.runs), *extra]))
 
 
+def cmd_estimate(cfg, args):
+    sys.exit(subprocess.call([sys.executable, str(ROOT / "bench" / "estimate.py")]))
+
+
 def cmd_dashboard(cfg, args):
     sys.exit(subprocess.call([sys.executable, "-m", "streamlit", "run", str(ROOT / "app" / "dashboard.py"),
                               "--server.port", str(args.port), "--server.headless", "true"]))
@@ -289,6 +294,8 @@ def build_parser() -> argparse.ArgumentParser:
     b.add_argument("--dry-run", action="store_true")
     b.add_argument("--runs", type=int, default=3)
     b.set_defaults(fn=cmd_bench)
+    sub.add_parser("estimate-speed", help="estimate MI300X + vLLM speed from the measured laptop workload").set_defaults(
+        fn=cmd_estimate)
     for name, fn in (("dashboard", cmd_dashboard), ("demo", cmd_demo)):
         sp = sub.add_parser(name)
         sp.add_argument("--port", type=int, default=8501)

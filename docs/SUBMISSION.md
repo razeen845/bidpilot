@@ -86,7 +86,7 @@ simulated results: they show the method works, not a guaranteed live-account res
 
 ## Built with
 Python, NumPy, SciPy, pandas, PyArrow - Qwen2.5 Instruct, llama.cpp (Vulkan), vLLM on ROCm, OpenAI-compatible
-API, Pydantic - Streamlit, Plotly, Matplotlib - Docker, GitHub Actions, pytest (131 tests), ruff - httpx,
+API, Pydantic - Streamlit, Plotly, Matplotlib - Docker, GitHub Actions, pytest (136 tests), ruff - httpx,
 trafilatura - AMD Ryzen + Radeon (local), AMD Instinct MI300X (deployment target).
 
 ## What's next

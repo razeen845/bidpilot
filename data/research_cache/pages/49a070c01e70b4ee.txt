@@ -1,0 +1,53 @@
+With the holidays approaching and pandemic-conscious customers avoiding brick-and-mortar stores, eCommerce retailers might hope this COVID Christmas will drive revenue higher than ever.
+However, the Ghost of Christmas Future is looming — in the form of continued supply chain disruptions.
+This shopping season, you might not have stock to meet your customers’ needs. And, if not properly addressed, out-of-stock items can lead to wasted online ad spend in the next few months, making it hard to take advantage of Google Shopping seasonality trends.
+Fortunately, there are steps you can take to control your ad spend on out-of-stock items — and even drive profits, despite your stock issues. We’ll cover it all in this blog, including:
+- How Google Shopping and Search Ads track out-of-stock products
+- How out-of-stock listings affect your PPC ads
+- And which seven strategies you should use for your out-of-stock product listings
+How Google Shopping and Search Track Out-of-Stock Products
+First things first: How does Google Shopping and Search know when products in your ads are out of stock — and what do they do about it?
+In Google Shopping Ads, product stock level always matters. After all, if a shopper clicks on a Shopping ad only to find out the product isn’t available, you’ll have a very disappointed user.
+You can easily input the status of your products into your Google Merchant Center (GMC) Account yourself by assigning the [in stock] or [out of stock] attribute to each product.
+If you can’t quickly complete your data feed management, rest assured that Google Shopping can do it for you. The platform pays attention to the product data for each listing on your website — and, if that data indicates it’s out of stock, Google Shopping will automatically stop delivering the out-of-stock product ad. Keep in mind: Out-of-stock products can still show up as free listings, if you opted in to this feature.
+On the other hand, Google Search doesn’t care whether a product in your ad is in stock or out-of-stock. The platform will continue delivering your PPC search ad as a search result no matter what.
+It’s great in theory, but remember: A customer could click on your paid (or organic SEO) result, discover your product is out of stock, and then move to a competitor’s site in search of an in-stock option. And nobody wants that.
+How Out-of-Stock Listings Affect Your PPC Ads
+The impact of any out-of-stock listings on your PPC ads will depend on the type of ad and the platform involved.
+Any mismatch between the stock status in your Google product feed and in Google Shopping will cause the product in your feed to be disapproved. Therefore, your out-of-stock Google Shopping listings will not appear in search results — and could even trigger an account issue that leads to an account suspension.
+To avoid this, use the automatic item updates in your Google Merchant Center Account, which allow Google to automatically update your stock attributes from your Google Shopping data feed.
+But what about Google Search PPC ads?
+These ads aren’t immediately affected by an out-of-stock status — but, over time, future performance of your ad could be affected. Customers who click on your ad will quickly bounce out of your site after seeing an “out-of-stock” notification, affecting your conversion rates and CPCs.
+Bottom line: There’s no need to pause ads in your Google Merchant Center Account because of out-of-stock issues. But, if the product in your Google Search Ads is no longer available, we seriously recommend pausing those ads until it’s back in stock.
+7 Strategies for Out-of-Stock Google Shopping/Search Ads
+All that information is great to know — but it’s not that helpful when you’ve got revenue and sales numbers to meet this holiday season.
+So, how can you continue to maximize your Google Ads profitability when products go in and out of stock in the months to come?
+Here are seven strategies we’ve recommended to our eCommerce clients this holiday season, starting with landing page optimization:
+1. Offer a backorder option.
+If you can estimate a product’s arrival back in stock, you can keep generating revenue through a backorder or pre-order option. You can even mark this kind of product availability attribute in Google Shopping, although you will need to input an “availability date” to give customers an expected timeline for the product.
+However, make sure you have reliable information about when the product will return to your site. You can lose customer goodwill and be forced to issue refunds if you can’t deliver on what you’ve promised.
+2. Capture customer data with a back-in-stock email.
+If product availability is uncertain, you can still try to gather first-party data with email signups.
+Give potential customers the opportunity to receive an email when their desired item is back in stock. Not only will this help you grow your subscriber list, you can market alternative products to them with segmented email retargeting.
+3. Add similar alternative products to the landing page.
+Have other items of the same product type as the out-of-stock option? Add them to that product page as recommendations.
+Once shoppers land on your site, they are four times more likely to buy an alternative product or brand from your site than they are to seek out their original product on another retailer’s site. Take advantage of that, and make it easy for shoppers to find alternatives that fit the bill.
+Pro tip: Make sure to update your recommendation widgets based on historical holiday shopping data.
+4. Consider pausing any out-of-stock product ads.
+It can’t be overstated: If you want to prevent a huge amount of wasted ad spend and frustrated customers this season, pause any Google Search PPC ads for out-of-stock products — but only after considering the other strategies above.
+If you can still get value from your product ad by displaying alternatives or gathering first-party data, it may still be worth the money spent collecting those clicks. There’s no “one size fits all” with out-of-stock PPC strategies, so always consider metrics besides purchases before cutting these ads from your campaigns.
+5. Feature other product categories to make up revenue.
+If you do decide to pause one product’s ad spend, don’t let that marketing money go to waste. Try to identify another product type that could use that ad spend to bump up your overall sales.
+Make sure to look at your historical data first, and then jump in with some experimentation. It may take some time to identify the highest-ROI products in this situation — so get started now, not two days before Black Friday.
+6. Develop a catch-all Google Shopping campaign.
+Every eCommerce store should have a low-priority, catch-all campaign that covers all product types. This low-priority, low-spend campaign can bring in some good revenue with little investment — and makes sure your products are always showing up in the ad bids, even if your other campaigns have hit their spending caps.
+You might not have had time and budget for this campaign in the past, but now it can be a profitable way to spend ad dollars, especially when facing down out-of-stock trends.
+7. Find your next bestseller.
+You may be losing money now because your best-selling product is out of stock — but another diamond in the rough could just be waiting for your attention.
+The worst thing you can do is to wait for your top-performing product to come back in stock. Instead, you should be experimenting with ad spend on new products.
+We recommend A/B testing with different ad designs focused on different products. That way, you can identify other products that sell well — while your current bestseller is out of stock and as an additional money-maker when availability returns.
+Who knows? You might discover a product that sells even better than your past top performer.
+Be Prepared for Supply Chain Problems By Planning Today
+It’s an unfortunate reality. In today’s COVID world, out-of-stock items are going to happen more often than ever before for more eCommerce retailers.
+But you don’t have to let these out-of-stock items hold back your business. With good strategies, you can continue to run highly profitable ad campaigns, despite stock and supply chain problems. Test out any of the above to see what works for you, and let us know how it goes.
+Want an expert to do it for you? Our eCommerce PPC services can help you revamp your ad campaigns today, starting with a free audit of your Google Shopping and/or Search campaigns. With our help, you can be ready for the upcoming holiday season, no matter what else COVID decides to throw your way.

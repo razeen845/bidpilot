@@ -1,0 +1,69 @@
+seed: 42
+platform: generic           # generic | amazon | google (rule profile; the account is always simulated)
+store:
+  source: synthetic        # synthetic | uci_online_retail (real products, prices and daily demand; see data/real)
+  n_products: 40
+  n_keywords: 120          # each keyword maps to one product
+  category_theme: home textiles
+  history_days: 30
+  sim_days: 14
+  daily_budget: 25000      # Rs, total for all ads per day
+bids:
+  min_bid: 3
+  max_bid: 80
+  max_daily_change: 0.20   # ±20% per day
+guardrails:
+  approval_change_pct: 0.10    # bigger than ±10% needs approval
+  approval_top_spenders: 10    # any change on top-10 spenders (7d) needs approval
+  min_clicks_to_act: 10        # fewer clicks in history -> hold ("still learning")
+  waste_min_spend_7d: 1500     # Rs
+  waste_min_clicks_7d: 20
+  waste_window_days: 14        # judge waste on 14 days, not 7 (low data volume)
+  conversion_lag_days: 1       # the newest day's clicks may still convert later
+  waste_confidence: 0.95       # pause only if 0 sales is <5% likely at the category conversion rate
+  protect_top_profit: 10       # top-10 profit makers (7d) are "proven": cuts capped + need approval
+  protected_max_cut: 0.10
+  low_stock_days: 3
+  overstock_days: 60
+real_data:                     # used when store.source = uci_online_retail
+  gbp_to_rs: 360               # convert the real GBP prices to Rs at a fixed rate
+  target_organic_per_day: 1.2  # scale wholesale units down to a small shop (median product)
+objectives: {}                 # product_id -> {mode: growth, max_acos: 0.6}; default objective = profit
+incrementality: {}             # product_id -> factor from a concluded switchback test (out/incrementality.json)
+rollback:
+  enabled: true
+  window_days: 4               # judge the last 4 days against the 4 before
+  min_bid_move: 0.15           # only bids the agent moved >= 15%
+  min_drop_per_day: 300        # Rs of daily profit lost
+  p_value: 0.01                # strict: ~160 targets are tested every day
+  cooldown_days: 3
+experiments:
+  days: 14                     # switchback length (7 ON / 7 OFF days, randomized in 2-day blocks)
+  max_ci_width: 0.6            # conclusive only if the 90% CI is at most this wide
+  min_days_each: 4
+  factor_floor: 0.1
+llm:
+  enabled: true
+  base_url: http://localhost:8000/v1   # vLLM (ROCm) OpenAI-compatible server on the AMD box
+  api_key: EMPTY
+  model_planner: Qwen/Qwen2.5-32B-Instruct
+  model_explainer: Qwen/Qwen2.5-32B-Instruct
+  json_mode: schema        # schema (response_format json_schema) | prompt (JSON-only prompting)
+  max_concurrency: 32
+  timeout_s: 30
+sandbox:
+  backend: subprocess      # docker | subprocess  (no Docker on the dev machine, see NOTES.md)
+  timeout_s: 10
+  memory_mb: 512
+  max_result_rows: 50
+  max_fix_attempts: 1
+research:
+  mode: cache              # live | cache
+  provider: tavily         # tavily | brave
+  max_queries: 4
+  results_per_query: 3
+  max_quote_words: 25
+consultant:
+  run_on_days: [7, 14]
+  max_recommendations: 5
+  max_analysis_questions: 3

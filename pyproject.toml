@@ -1,0 +1,48 @@
+[project]
+name = "bidpilot"
+version = "1.0.0"
+description = "AI bid manager and consultant for product and keyword ads (practice ad account, LLMs on AMD via vLLM)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "pyyaml>=6",
+    "pydantic>=2.5",
+    "openai>=1.30",
+    "httpx>=0.27",
+    "trafilatura>=1.8",
+    "streamlit>=1.35",
+    "plotly>=5.20",
+    "matplotlib>=3.8",
+    "pyarrow>=15",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = [".venv", "out"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = [
+    "E501",   # long f-strings in prompts and templates read better unwrapped
+    "B008",   # pydantic Field defaults
+    "B905",   # zip over equal-length DataFrame columns
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
+# entry points put the repo root on sys.path before importing project modules
+"app/dashboard.py" = ["E402"]
+"cli.py" = ["E402"]
+"scripts/*" = ["E402"]
+"bench/*" = ["E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,44 @@
+You’ve invested a lot of time and effort to craft a successful PPC ad campaign. But a simple mistake such as slipping up on inventory can ruin all of your hard work and potentially harm your revenue. Inventory management has been a business problem for decades. And if you’re looking for tactical tips on advertising out-of-stock items, you’ve come to the right place.
+The Consequences of Going Out-of-Stock on Amazon
+Without the proper marketing strategy, you could be left with a brand that is not engaging its own potential customer base or providing a strong ROI for time and effort invested. But without efficient inventory management, you could be left with no product to market.
+That is why inventory management comes first.
+Just as having too much inventory can be bad for your business, not enough inventory can cause the same problems. Out-of-stock goods push a customer back a step in a purchase funnel. Seeing an out-of-stock sign on items reduces consumer confidence.
+Low availability of stock is an issue that can negatively affect product ranking and sales. Also, remember that when a product runs out of stock, PPC campaigns become inactive, and all the efforts and time you’ve spent setting it up are wasted.
+This could potentially be a harmful situation for your product because ranking and sales could be declining. That’s when your rank, sales, and visibility on Amazon take a dip, and you’re not at your best. It will take a couple of weeks before your account is back up and running for you to continue selling like before.
+Tips for Advertising Out-of-Stock Items on Amazon
+As many sellers are facing increasing competition, and the world experiences a huge supply chain crisis, the “coming soon” products are becoming more prevalent. However, this method can increase customer churn rate. So, sellers need to rethink their approach to product ads to keep up with shoppers’ increasing need to find exactly what they need right here right now.
+Decrease Bids and Budgets
+It makes sense to lower the bids and budgets to balance ad campaigns while you restock the inventory. Low inventory issues are a major setback for most campaigns because the number of impressions and clicks sinks. This happens because the Amazon algorithm identifies low-stock items and moves them behind those that are inventory-full.
+The challenges caused by out-of-stock inventory are significantly harder than those created by low inventory, as they freeze your sales. You lose sales and leads who see that your product is out of stock and switch to your competitor.
+Launch Stacked Campaigns
+Launch stack of campaigns by copying existing campaigns but reducing bids. The best way to create relevancy as you prepare for a significant change in demand is to leverage backup ASINs with greater availability in your inventory. This can be a good strategy in case inventory constraints decline.
+Add Alternatives to Your Listing
+If you have similar products to those that are currently out of stock, offer them as alternatives. If consumers land on your website, the likelihood of them purchasing an alternative product from your website is high.
+In fact, RetailDive found that they are four times more likely to buy an alternative than they are to keep on searching for the item they wanted to buy in the first place. Use their visits as an opportunity to promote items that are similar to what they need.
+Find Another Bestseller
+You put all your energy into your best-selling product, and on the days when it’s in stock, you’re flying on the wings of the hype and sales. Then, just as it feels like you’re about to take off, the store’s inventory is exhausted. What can you do in this case? Refresh your ad campaigns by introducing a new product that is just as exciting and worthy.
+One of the worst things for an online retailer is to wait for their top-ranked product to come back in stock. Instead, you should try promoting another product. Consider A/B testing using various advertising designs to see which ad will drive the best response to the product.
+Identifying products that sell well while your current bestseller is out of stock helps you broaden your audience while filling in holes in your inventory.
+Take Advantage of Automation
+Businesses that expect to suffer from durable stock-outs should be focusing on the enhanced efficiency of their ad performance. Think about implementing strategies described in the graphic below.
+Monitor Sponsored Brand Campaigns
+Keep a sharp eye for Sponsored Brand campaigns containing an ASIN with low inventory, a high Lost Buy Box issues. The Sponsored Brand campaigns are not automatically paused when component ASINs are out of stock and will proceed with driving traffic to 3P offers if your offer is no longer valid. When you pause your advertising campaign or launch a parallel campaign with products that are already heavily stocked, you can be sure that your investment goes to 1P sales.
+Be Prepared for Supply Chain Problems
+This year, the world got a glimpse of what would be a crippling “supply chain nightmare.” The potential disruption is reliant on a complicated chain of events that would be difficult – if not impossible – to predict largely because of the impact on the global economy. The good news is that the entire chain of events can be avoided with proper planning.
+Good strategies implemented with relatively low costs can bring your business to a better position despite the fluctuations in the stock and supply chain. Besides, there are plenty of inventory management services on the market, and you can resort to their help if doing it on your own seems like a daunting task.
+Keep Your Product Feed Up to Date
+One of the ways to ensure a positive shopping experience is to have a regularly updated product feed on Amazon. It’s important that your product feed is up to date and accurately represents the inventory in your store. This is key for enhancing visibility and increasing conversions and protecting your company’s online reputation.
+Your ad strategy should include a set of tactics that automatically pause new ad campaigns as soon as a product goes out of stock. By updating inventory frequently, you can ensure that ad spend is put towards products that can be purchased.
+Consider Pausing any Out-of-Stock Product Ads
+When launching an ad campaign, it is important to make sure that you are not paying for clicks on items that are out of stock. So, to avoid huge losses and customer disappointment, it is better to pause any ads until you stock up.
+If you can still benefit from your product advertising by promoting alternatives or collecting your own data, it might be worth the money spent gathering those clicks. It is important to consider not only purchases but also metrics like click-through rates when deciding to remove these ads from your campaigns.
+Run Ads as Usual
+Many sellers keep their ads on even when inevitable stock-out is on the horizon. This may be a good way of not only staying visible to your customers but also helping to maintain brand awareness as well as preventing sales failure. However, many combine this strategy with simultaneous price increase in order to reduce the risk of shortages.
+When using this strategy, make sure to be careful about how much you increase it, as a significant rise in prices can cause Amazon to respond negatively. Price hikes can suppress the Buy Box, and it will be necessary to make a further click to purchase a product. So, to add an item to the cart, a shopper will have to click from the product detail page.
+When there is a rapid change in price, this could trigger a conversation about whether the change is a response to a genuine need or price gouging (this suggests that the business is intentionally operating on the verge of taking advantage of the market). This is particularly relative for delicate items like masks or hand sanitizers, and the seller runs the risk of being barred from Amazon.
+Final Word
+Given Amazon’s low-key nature of its search and ranking algorithm, we can only speculate about the true impact of stock shortages. Still, the chief purpose of this post is to warn you that being out of stock can negate much of the hard work you’ve already done to build your brand awareness on Amazon.
+If your product runs out, it will take a lot of cost and energy to get back to the previous level of sales. Most likely, you will need at least two to three weeks to regain lost ground when you stock up.
+By keeping an eye on your inventory and syncing it with your ads, you can ensure you are continually moving the needle.
+About the author
+This article was created by the Profit Whales team. Profit Whales is a full-service marketing agency for Amazon brands.

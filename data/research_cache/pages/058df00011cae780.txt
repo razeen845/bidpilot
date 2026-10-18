@@ -1,0 +1,30 @@
+[pause] attribute. If your product isn't in stock [in_stock] and you're temporarily not accepting orders for it, set availability [availability] to out of stock [out_of_stock].
+Use the pause [pause] attribute to temporarily stop products from showing. Note that if you pause a product for more than 14 days by setting the attribute to all, it will be automatically archived. To restore a product that was automatically archived this way, simply remove the pause attribute or change its value.
+On this page
+When to use
+Optional for each product
+You may want to use this attribute if a product is available for sale and in stock on your website, but you’d like to stop showing your product for a short time. Using the pause [pause] attribute lets you quickly reinstate the product when you’re ready to show it again. Products that are paused for more than 14 days can take one or more days to be reactivated. This attribute can't be used to pause only free listings. You can use it to pause your ads or your ads plus free listings. If you want to pause only free listings, use the excluded destination [excluded_destination] attribute.
+These are the supported values you can choose from:
+- Ads [ads]
+  - You’re currently pausing your product for all ads locations (including Shopping Ads, Display Ads, and local inventory ads).
+- All [all]
+  - You’re currently pausing your product for all Shopping locations (including Shopping Ads, Display Ads, local inventory ads, and free listings).
+Format
+Follow these formatting guidelines to make sure we understand the data you're submitting. Learn when and how to submit your product data in English
+| Supported values | ads all | 
+| Repeated field | No | 
+| File format | Example value | 
+| Text feeds | ads | 
+| XML feeds | <g:pause>ads</g:pause> | 
+To format your data for Merchant API, check the Merchant API for Shopping resource.
+Minimum requirements
+These are the requirements that you'll need to meet to show your product. If you don't follow these requirements, we'll disapprove your product and let you know in your Merchant Center account.
+- Submit the attribute with a supported value. If you don’t submit the attribute with a value, we’ll assume your product isn't paused.
+- Only pause a product for 14 days or less. If you need to stop showing your product for more than 14 days, use the excluded destination [excluded_destination] attribute.
+- Only use the attribute for ads destinations. Use the excluded destination [excluded_destination] attribute for products you want to pause for destinations other than ads, for example free listings.
+- Avoid using availability to pause ads or free listings. Don't attempt to set the availability [availability] attribute to “out_of_stock” to pause your products.
+Examples
+Product is temporarily paused for all ads and will be unpaused within 14 days or less
+| Product data for an Android Squishable that is temporarily paused for Ads |  | 
+| Attribute | Value | 
+| Pause [pause] | ads |

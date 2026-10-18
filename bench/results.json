@@ -1,0 +1,107 @@
+{
+ "measured_at": "2026-10-18T05:51:29",
+ "dry_run": false,
+ "gpu": "AMD Radeon Graphics (Ryzen 5 7430U laptop, Vulkan via llama.cpp)",
+ "model": "qwen2.5-3b-instruct",
+ "base_url": "http://127.0.0.1:8080/v1",
+ "runs": 1,
+ "label": "Qwen2.5-3B-Instruct Q4_K_M on an AMD Ryzen 5 7430U laptop (Radeon iGPU, llama.cpp Vulkan, 4 parallel slots)",
+ "ads": 160,
+ "speedup_bidding": 3.06,
+ "speedup_consultant": 1.02,
+ "results": [
+  {
+   "scenario": "bidding",
+   "variant": "naive",
+   "llm_calls": 160.0,
+   "failed_calls": 0,
+   "tokens_in": 37320.0,
+   "tokens_out": 7612.0,
+   "llm_seconds_sum": 1251.8,
+   "wall_s": 1253.456,
+   "tokens_per_s": 6.1,
+   "measured_ads": 40,
+   "measured_wall_s": 313.364,
+   "note": "measured on 40 of 160 ads, scaled x4 (sequential calls)"
+  },
+  {
+   "scenario": "bidding",
+   "variant": "bidpilot",
+   "llm_calls": 92,
+   "failed_calls": 0,
+   "tokens_in": 25483,
+   "tokens_out": 2701,
+   "llm_seconds_sum": 13390.578,
+   "wall_s": 409.003,
+   "tokens_per_s": 6.6
+  },
+  {
+   "scenario": "consultant",
+   "variant": "sequential",
+   "llm_calls": 3,
+   "failed_calls": 0,
+   "tokens_in": 881,
+   "tokens_out": 34,
+   "llm_seconds_sum": 9.083,
+   "wall_s": 16.701,
+   "tokens_per_s": 2.0
+  },
+  {
+   "scenario": "consultant",
+   "variant": "parallel",
+   "llm_calls": 3,
+   "failed_calls": 0,
+   "tokens_in": 881,
+   "tokens_out": 34,
+   "llm_seconds_sum": 41.486,
+   "wall_s": 16.343,
+   "tokens_per_s": 2.1
+  }
+ ],
+ "samples": {
+  "bidding/naive": [
+   {
+    "llm_calls": 40,
+    "failed_calls": 0,
+    "tokens_in": 9330,
+    "tokens_out": 1903,
+    "llm_seconds_sum": 312.95,
+    "wall_s": 313.364,
+    "tokens_per_s": 6.1
+   }
+  ],
+  "bidding/bidpilot": [
+   {
+    "llm_calls": 92,
+    "failed_calls": 0,
+    "tokens_in": 25483,
+    "tokens_out": 2701,
+    "llm_seconds_sum": 13390.578,
+    "wall_s": 409.003,
+    "tokens_per_s": 6.6
+   }
+  ],
+  "consultant/sequential": [
+   {
+    "llm_calls": 3,
+    "failed_calls": 0,
+    "tokens_in": 881,
+    "tokens_out": 34,
+    "llm_seconds_sum": 9.083,
+    "wall_s": 16.701,
+    "tokens_per_s": 2.0
+   }
+  ],
+  "consultant/parallel": [
+   {
+    "llm_calls": 3,
+    "failed_calls": 0,
+    "tokens_in": 881,
+    "tokens_out": 34,
+    "llm_seconds_sum": 41.486,
+    "wall_s": 16.343,
+    "tokens_per_s": 2.1
+   }
+  ]
+ }
+}

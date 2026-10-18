@@ -1,0 +1,570 @@
+← Back to Blog
+2026-03-12
+Google Ads Negative Keywords Strategy: Stop Wasting 30% of Your Ad Spend
+Your Google Ads campaigns are bleeding money on irrelevant clicks. Every day, your carefully crafted ads appear for searches like "free alternatives," "DIY tutorials," and your competitors' brand names.
+The average e-commerce account wastes 25-35% of ad spend on irrelevant traffic. That's money that could be driving qualified customers instead of curious browsers and bargain hunters.
+Negative keywords are your firewall against wasted spend. Used strategically, they can improve campaign efficiency by 30-50% while maintaining or increasing conversion volume.
+At ATTN Agency, we've saved clients over $2.4M in wasted ad spend through systematic negative keyword strategies. For brands like Kaged and Emuaid, proper negative keyword management increased ROAS by 40-60% without reducing valuable traffic.
+Here's your complete guide to negative keyword mastery.
+The Economics of Negative Keywords
+Wasted Spend Reality Check
+Common Irrelevant Search Categories:
+- Free/Cheap Seekers: 15-25% of irrelevant traffic
+- DIY/Tutorial Searches: 10-20% of irrelevant traffic
+- Competitor Comparisons: 8-15% of irrelevant traffic
+- Job/Career Searches: 5-12% of irrelevant traffic
+- Wholesale/B2B Inquiries: 5-10% of irrelevant traffic
+Financial Impact Example:
+Monthly Google Ads Spend: $50,000
+Irrelevant Traffic Rate: 30%
+Wasted Spend: $15,000/month
+Annual Waste: $180,000
+With Negative Keywords:
+Irrelevant Traffic Rate: 8%
+Wasted Spend: $4,000/month
+Annual Savings: $132,000
+ROI on Negative Keyword Management: 3,300%
+Quality Score and Performance Benefits
+Direct Performance Improvements:
+- 15-30% increase in click-through rates
+- 20-40% improvement in Quality Scores
+- 10-25% reduction in cost-per-click
+- 25-50% increase in conversion rates
+Indirect Benefits:
+- Better ad relevance and user experience
+- Increased impression share for relevant queries
+- More budget available for high-intent traffic
+- Improved account-level Quality Score signals
+Negative Keyword Research Methodology
+Search Query Report Analysis
+Weekly Search Query Mining Process
+Step 1: Data Export and Filtering
+Query Criteria:
+- Minimum 10 impressions
+- Minimum $5 spend
+- Zero conversions
+- CTR below account average
+- Time period: Last 30 days
+Export Fields:
+- Search query
+- Impressions
+- Clicks  
+- Cost
+- Conversions
+- CTR
+- Campaign
+- Ad group
+Step 2: Categorization Framework
+Category A: Immediate Negatives (High Priority)
+- Competitor brand names
+- "Free" variations
+- Job/career related
+- Wholesale/B2B terms
+- Adult/inappropriate content
+Category B: Conditional Negatives (Medium Priority)  
+- Location-specific (if not relevant)
+- Price-sensitive terms ("cheap," "discount")
+- DIY/tutorial searches
+- Review/comparison focused
+- Alternative product searches
+Category C: Monitor Closely (Low Priority)
+- Broad match variations
+- Misspellings of relevant terms
+- Adjacent product categories
+- Seasonal irrelevant terms
+Competitor Analysis for Negative Keywords
+Competitive Intelligence Sources
+- Search query reports showing competitor mentions
+- Brand monitoring tools for competitor campaigns
+- Industry forum and community discussions
+- Customer service inquiries about competitors
+- Social media mentions and comparisons
+Example: Skincare Brand Negative Keywords
+Direct Competitors:
+- "cetaphil alternatives"
+- "cerave vs [your brand]"
+- "neutrogena review"
+- "[competitor] coupon code"
+Adjacent Competitors:
+- "sephora skincare"
+- "drugstore moisturizer"  
+- "dermatologist recommended"
+- "prescription acne treatment"
+Implementation Strategy:
+- Add competitor names as exact match negatives
+- Include comparison terms as phrase match negatives
+- Monitor for new competitor mentions monthly
+- Adjust based on competitive landscape changes
+Industry-Specific Negative Keywords
+E-commerce Universal Negatives
+Free/Cost-Related:
+- free
+- cheap  
+- discount
+- coupon
+- promo code
+- wholesale
+- bulk pricing
+- clearance
+DIY/Alternatives:
+- how to make
+- DIY
+- homemade
+- recipe
+- tutorial
+- alternative
+- substitute
+- instead of
+Business/Career:
+- job
+- career
+- salary
+- employment
+- hiring
+- resume
+- work
+- business opportunity
+Category-Specific Examples
+Beauty/Skincare:
+Professional Services:
+- dermatologist
+- facial treatment
+- spa services
+- esthetician
+- professional application
+Medical/Prescription:
+- prescription
+- doctor recommended
+- medical treatment
+- dermatology
+- clinic
+DIY/Natural Alternatives:
+- home remedy
+- natural alternative
+- kitchen ingredient
+- DIY face mask
+- homemade scrub
+Fitness/Supplements:
+Professional/Medical:
+- personal trainer
+- nutritionist
+- doctor prescribed
+- medical supervision
+- steroid alternative
+Free/Illegal Content:
+- free workout
+- pirated program
+- download torrent
+- crack software
+- illegal supplements
+Competitive/Alternative:
+- GNC products
+- local supplement store
+- pharmacy vitamins
+- prescription medication
+Advanced Negative Keyword Strategies
+Match Type Optimization
+Strategic Match Type Usage
+Exact Match Negatives [keyword]
+- Use for: Specific competitor names, exact unwanted terms
+- Example: [free protein powder]
+- Blocks: Only the exact query "free protein powder"
+- Allows: "protein powder free shipping," "sugar free protein powder"
+Phrase Match Negatives "keyword"
+- Use for: Unwanted phrases that should be blocked regardless of context
+- Example: "how to make"
+- Blocks: "how to make protein powder," "learn how to make supplements"
+- Allows: "make gains with protein powder"
+Broad Match Negatives keyword
+- Use for: General concepts to avoid across variations
+- Example: diy
+- Blocks: "DIY," "do it yourself," "make your own," "homemade"
+- Allows: Most other variations unless they contain the core concept
+Match Type Hierarchy Example:
+Skincare Brand Negative Keywords:
+Exact Match Negatives:
+[neutrogena] - blocks only "neutrogena"
+[cerave] - blocks only "cerave"  
+[free skincare] - blocks only "free skincare"
+Phrase Match Negatives:
+"how to make" - blocks any query containing this phrase
+"DIY face mask" - blocks queries with this specific phrase
+"dermatologist near me" - blocks location-based professional searches
+Broad Match Negatives:
+prescription - blocks prescription-related variations
+wholesale - blocks wholesale and bulk-related queries  
+job - blocks employment and career-related searches
+Dynamic Negative Keyword Lists
+Campaign-Level vs. Account-Level Management
+Account-Level Shared Lists
+List 1: Universal E-commerce Negatives
+- free, cheap, wholesale, job, career, diy, how to make
+- Applied to: All campaigns
+- Review frequency: Monthly
+List 2: Competitor Brand Names  
+- [competitor1], [competitor2], [competitor3]
+- Applied to: Brand and generic campaigns
+- Review frequency: Bi-weekly
+List 3: Professional Services
+- dermatologist, doctor, clinic, professional treatment
+- Applied to: Consumer product campaigns only
+- Review frequency: Quarterly
+Campaign-Specific Lists
+Campaign: Protein Powder - Broad Match
+Specific Negatives:
+- "protein powder for dogs"
+- "vegan protein alternatives" 
+- "protein powder side effects"
+- "best cheap protein powder"
+Campaign: Premium Skincare - Exact Match
+Specific Negatives:
+- "budget skincare routine"
+- "drugstore moisturizer"
+- "affordable anti aging"
+- "cheap night cream"
+Automated Negative Keyword Discovery
+Google Ads Scripts for Automation
+Basic Automated Negative Keyword Script:
+function main() {
+  var NEGATIVE_LIST_NAME = "Auto-Generated Negatives";
+  var MIN_COST = 25;
+  var MIN_IMPRESSIONS = 100;
+  var MAX_CTR = 0.02;
+  var IRRELEVANT_TERMS = [
+    "free", "cheap", "diy", "how to make", "job", "career",
+    "wholesale", "bulk", "discount", "coupon"
+  ];
+  
+  var searchTermsReport = AdsApp.report(
+    "SELECT Query, Impressions, Clicks, Cost, Conversions " +
+    "FROM SEARCH_QUERY_PERFORMANCE_REPORT " +
+    "WHERE Impressions > " + MIN_IMPRESSIONS + " " +
+    "AND Cost > " + MIN_COST + " " +
+    "AND Conversions = 0 " +
+    "DURING LAST_30_DAYS"
+  );
+  
+  var negativeKeywords = [];
+  var rows = searchTermsReport.rows();
+  
+  while (rows.hasNext()) {
+    var row = rows.next();
+    var query = row["Query"].toLowerCase();
+    var impressions = parseInt(row["Impressions"]);
+    var clicks = parseInt(row["Clicks"]);
+    var cost = parseFloat(row["Cost"]);
+    
+    var ctr = clicks / impressions;
+    
+    if (ctr < MAX_CTR && containsIrrelevantTerm(query, IRRELEVANT_TERMS)) {
+      negativeKeywords.push('"' + row["Query"] + '"');
+      Logger.log("Found negative keyword: " + row["Query"] + 
+                " (CTR: " + (ctr * 100).toFixed(2) + "%, Cost: $" + cost.toFixed(2) + ")");
+    }
+  }
+  
+  if (negativeKeywords.length > 0) {
+    addToNegativeList(negativeKeywords, NEGATIVE_LIST_NAME);
+  }
+}
+function containsIrrelevantTerm(query, irrelevantTerms) {
+  for (var i = 0; i < irrelevantTerms.length; i++) {
+    if (query.indexOf(irrelevantTerms[i]) !== -1) {
+      return true;
+    }
+  }
+  return false;
+}
+function addToNegativeList(keywords, listName) {
+  var lists = AdsApp.negativeKeywordLists()
+    .withCondition("Name = '" + listName + "'")
+    .get();
+  
+  var list;
+  if (lists.hasNext()) {
+    list = lists.next();
+  } else {
+    list = AdsApp.negativeKeywordLists().create(listName);
+  }
+  
+  list.addNegativeKeywords(keywords);
+  Logger.log("Added " + keywords.length + " negative keywords to " + listName);
+}
+Seasonal Negative Keyword Management
+Quarterly Negative Keyword Adjustments
+Q1 (January-March): Post-Holiday Cleanup
+Add Seasonal Negatives:
+- "christmas gift"
+- "holiday return"  
+- "gift card exchange"
+- "post holiday sale"
+Remove From Negatives:
+- "valentine's gift"
+- "spring cleaning"
+- "new year resolution"
+Q2 (April-June): Spring/Summer Prep
+Add Seasonal Negatives:
+- "winter coat"
+- "christmas in july"
+- "back to school" (early adds)
+Monitor Closely:
+- "summer vacation"
+- "beach essentials"
+- "outdoor activities"
+Q4 (October-December): Holiday Season
+Remove From Negatives (Temporarily):
+- "gift" related terms
+- "present" variations
+- "holiday" combinations
+Add Seasonal Negatives:
+- "black friday 2025" (after event)
+- "last year's model"
+- "discontinued item"
+Implementation Framework
+Week 1-2: Audit and Foundation
+Current State Analysis
+- Export All Search Query Data: Last 90 days minimum
+- Calculate Waste Percentage: Irrelevant clicks / total clicks
+- Identify Top Waste Categories: Group by common themes
+- Analyze Current Negative Keywords: Review existing lists for gaps
+Initial Negative Keyword List Creation
+Priority 1: High-Volume Waste (Implement Immediately)
+- Competitor brand names
+- "Free" variations  
+- Job/career terms
+- Clearly irrelevant categories
+Priority 2: Medium-Volume Waste (Implement Week 2)
+- DIY/tutorial searches
+- Price-sensitive terms
+- Location-specific irrelevant terms
+- Review/comparison focused queries
+Priority 3: Low-Volume Waste (Implement Week 3-4)
+- Misspellings of competitors
+- Adjacent product categories
+- Seasonal irrelevant terms
+- Industry jargon variations
+Week 3-4: Advanced Implementation
+Smart List Management Setup
+Shared Negative Keyword Lists:
+List 1: Universal Negatives (Apply to All Campaigns)
+- free, cheap, wholesale, bulk, diy, job, career
+- Review: Monthly
+- Owner: Account manager
+List 2: Competitor Terms (Apply to Brand + Generic)
+- All competitor exact match brand names
+- Review: Bi-weekly  
+- Owner: Competitive intelligence
+List 3: Category Specific (Apply by Product Type)
+- Professional services, medical terms, B2B terms
+- Review: Monthly
+- Owner: Product specialist
+List 4: Seasonal Adjustments (Apply Temporarily)
+- Holiday, seasonal, event-specific terms
+- Review: Pre-season
+- Owner: Campaign manager
+Automation Setup
+- Google Ads Scripts: Implement automated discovery
+- Alert Systems: Set up notifications for high-waste queries
+- Review Calendars: Schedule regular negative keyword reviews
+- Performance Tracking: Monitor impact on key metrics
+Month 2: Optimization and Scaling
+Performance Impact Measurement
+Before/After Analysis (30-day periods):
+Efficiency Metrics:
+- CTR improvement percentage
+- Quality Score changes
+- CPC reduction percentage
+- Conversion rate improvement
+Volume Metrics:  
+- Impression share changes
+- Click volume changes (should maintain or increase)
+- Conversion volume impact
+- Revenue attribution analysis
+ROI Calculation:
+- Wasted spend reduction
+- Improved performance value
+- Management time investment
+- Net ROI on negative keyword initiative
+Advanced Negative Keyword Tactics
+Competitive Negative Keyword Intelligence
+Competitor Research Methods
+Search Query Infiltration Analysis
+Process:
+1. Identify when your ads show for competitor terms
+2. Analyze conversion rates for competitor-related searches
+3. Determine if competitor traffic adds value or wastes budget
+4. Create strategic negative keyword plan
+Example Analysis:
+Competitor Search: "neutrogena moisturizer"
+Your Ad Performance:
+- Impressions: 1,247
+- Clicks: 23 (1.84% CTR)
+- Conversions: 0
+- Cost: $47.83
+Action: Add "neutrogena" as broad match negative
+Impact: $47.83/month savings, improved relevance
+Brand Protection Strategy
+Defensive Negatives:
+- [your brand] + review
+- [your brand] + complaint  
+- [your brand] + lawsuit
+- [your brand] + scandal
+- [your brand] + alternative
+Purpose: Prevent competitor ads on your brand terms
+Implementation: Separate campaigns for brand protection
+Budget: 5-10% of total budget for brand term monitoring
+Performance-Based Negative Keyword Optimization
+Conversion Rate-Based Decisions
+High-Volume, Low-Converting Query Analysis
+Query Evaluation Criteria:
+Immediate Negative Addition:
+- 500+ impressions, 0 conversions
+- CTR below 1% with high cost
+- Clearly irrelevant to business model
+- Competitor brand name variations
+Conditional Negative Addition:  
+- 100+ impressions, 0 conversions, but relevant category
+- Low CTR but potential seasonal relevance
+- Price-sensitive terms during promotional periods
+- Adjacent product categories with expansion potential
+Monitor and Decide Later:
+- 50+ impressions, 0 conversions, relevant intent
+- New product category searches
+- Emerging market trends
+- Potential long-term opportunities
+Quality Score Impact Analysis
+Before Negative Keywords:
+Average Quality Score: 6.2
+CTR: 2.1%
+CPC: $1.47
+After Strategic Negative Keywords (90 days):
+Average Quality Score: 8.1 (+31%)
+CTR: 3.2% (+52%)  
+CPC: $1.08 (-27%)
+Net Impact:
+- 52% more relevant traffic
+- 27% lower cost per click
+- 31% improvement in Quality Score
+- 45% improvement in conversion rate
+Multi-Campaign Negative Keyword Coordination
+Cross-Campaign Negative Keyword Strategy
+Campaign-Specific Approaches
+Brand Campaigns:
+Negatives: Competitor names, job searches, wholesale terms
+Allow: Your brand + any modifier (even negative sentiment)
+Goal: Capture all brand-related traffic for analysis
+Generic Campaigns:  
+Negatives: Brand names (all competitors), free/cheap terms, DIY
+Allow: Product-focused searches with commercial intent
+Goal: Capture high-intent product searches only
+Shopping Campaigns:
+Negatives: How-to searches, professional services, B2B terms  
+Allow: Product-specific searches with purchase intent
+Goal: Product discovery and comparison traffic
+Remarketing Campaigns:
+Negatives: Competitor names, already purchased products
+Allow: Product interest, cross-sell opportunities
+Goal: Conversion optimization for warm traffic
+Negative Keyword Overlap Management
+Avoid Over-Negation:
+Problem: Adding "moisturizer" as negative to skincare campaigns
+Impact: Blocks "anti-aging moisturizer," "night moisturizer"
+Solution: Use phrase match "cheap moisturizer" instead
+Problem: Adding "supplement" as negative to protein campaigns  
+Impact: Blocks "protein supplement," "workout supplement"
+Solution: Use specific negatives like "vitamin supplement"
+Best Practice: Review search query reports for blocked valuable terms
+Frequency: Weekly for first month, monthly thereafter
+Case Study: Emuaid Negative Keyword Success
+Challenge: Medical-adjacent product appearing for inappropriate health searches, wasting 40%+ of ad budget.
+Original Problem Queries:
+- "prescription ointment"
+- "doctor recommended treatment"
+- "medical grade antiseptic"
+- "hospital wound care"
+- "veterinary ointment"
+- "industrial strength cleaner"
+Negative Keyword Strategy Implementation:
+Phase 1: Medical/Professional Exclusions
+Immediate Negatives Added:
+- prescription
+- doctor
+- medical grade
+- hospital
+- veterinary
+- vet
+- professional treatment
+- clinical strength
+Match Types Used:
+- Broad match for concepts (prescription, medical)
+- Phrase match for specific terms ("doctor recommended")  
+- Exact match for competitor names
+Phase 2: Use Case Refinement
+Problem: Over-negation blocking relevant queries
+Original Negative: "doctor" (broad match)
+Blocked Wanted Traffic: "doctor pepper stain remover"
+Solution: Refined Negatives
+- "doctor recommended" (phrase match)
+- "see a doctor" (phrase match)  
+- [doctor visit] (exact match)
+- medical doctor (phrase match)
+Result: Recovered 23% of relevant traffic volume
+Phase 3: Automation and Monitoring
+Automated Script Setup:
+- Daily monitoring for medical terminology
+- Weekly review of health-related searches
+- Automated addition of prescription drug names
+- Alert system for high-cost, zero-conversion queries
+Manual Review Process:
+- Weekly search query analysis
+- Monthly negative keyword performance review
+- Quarterly strategic negative keyword planning
+- Annual complete account negative keyword audit
+Results After 6 Months:
+- Wasted Spend Reduction: 42% decrease in irrelevant traffic
+- CTR Improvement: 1.8% → 2.9% (+61% increase)
+- Quality Score: 6.1 → 8.4 average (+38% improvement)
+- Conversion Rate: 3.2% → 4.7% (+47% improvement)
+- ROAS Improvement: 3.1:1 → 4.8:1 (+55% increase)
+- Monthly Savings: $18,400 in redirected budget to profitable traffic
+Key Success Factors:
+- Industry-Specific Research: Deep understanding of medical/health search landscape
+- Gradual Implementation: Phased approach prevented over-negation
+- Continuous Monitoring: Prevented blocking valuable edge-case traffic
+- Automation Balance: Scripts for routine work, human oversight for strategy
+- Performance Integration: Negative keywords aligned with overall campaign goals
+Tools and Resources
+Research and Analysis Tools
+Free Tools:
+- Google Ads Search Query Report: Primary data source
+- Google Keyword Planner: Related term research
+- Google Trends: Seasonal trend analysis
+- Answer The Public: Question-based search research
+Premium Tools:
+- SEMrush: Competitor keyword analysis and negative keyword suggestions
+- Ahrefs: Search query research and competitor analysis
+- WordStream: Negative keyword research and management
+- SpyFu: Competitor advertising intelligence
+Management and Automation
+Google Ads Native Features:
+- Shared Negative Keyword Lists: Centralized management
+- Negative Keyword Recommendations: AI-powered suggestions
+- Search Terms Report: Performance-based discovery
+- Campaign Exclusions: Campaign-level management
+Third-Party Management:
+- Optmyzr: Advanced negative keyword automation
+- WordStream Advisor: Negative keyword recommendations
+- Acquisio: AI-powered negative keyword discovery
+- Marin Software: Enterprise negative keyword management
+Conclusion
+Negative keywords are the unsung heroes of Google Ads optimization. While everyone focuses on finding better keywords to target, smart advertisers eliminate the wrong traffic first.
+Every irrelevant click is money stolen from profitable opportunities. Every off-target impression is potential reach lost for your ideal customers. Every wasted dollar on negative keywords is a dollar that could have driven real business results.
+Start with the obvious negatives: competitors, "free" seekers, and clearly irrelevant categories. Build systematic processes for ongoing discovery and management. Use automation to handle routine work while maintaining strategic oversight.
+At ATTN Agency, strategic negative keyword management has saved clients millions in wasted spend while improving overall account performance by 30-60%. The secret is treating negative keywords as strategic intelligence, not just exclusion lists.
+Remember: Sometimes the most valuable optimization is saying "no" to the wrong traffic so you can say "yes" to more of the right customers.
+Ready to stop wasting ad spend on irrelevant traffic? Contact ATTN Agency to learn how our negative keyword strategies have helped DTC brands improve ROAS by 40-80% while reducing wasted spend by millions of dollars.
+Related Articles
+Additional Resources
+Ready to Grow Your Brand?
+ATTN Agency helps DTC and e-commerce brands scale profitably through paid media, email, SMS, and more. Whether you're looking to optimize your current strategy or launch something new, we'd love to chat.
+Book a Free Strategy Call or Get in Touch to learn how we can help your brand grow.

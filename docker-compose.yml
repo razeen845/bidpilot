@@ -1,0 +1,32 @@
+# Dashboard only:              docker compose up app
+# Dashboard + vLLM on ROCm:    docker compose --profile amd up      (on the AMD GPU box)
+services:
+  app:
+    build: .
+    ports: ["8501:8501"]
+    environment:
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://vllm:8000/v1}
+      LLM_MODEL: ${LLM_MODEL:-Qwen/Qwen2.5-32B-Instruct}
+      SEARCH_API_KEY: ${SEARCH_API_KEY:-}
+    volumes:
+      - bidpilot-out:/app/out
+    restart: unless-stopped
+
+  vllm:
+    profiles: ["amd"]
+    image: rocm/vllm:latest
+    command: ["vllm", "serve", "${LLM_MODEL:-Qwen/Qwen2.5-32B-Instruct}", "--port", "8000", "--max-model-len", "16384"]
+    devices: ["/dev/kfd", "/dev/dri"]
+    group_add: ["video"]
+    ipc: host
+    shm_size: 16g
+    security_opt: ["seccomp=unconfined"]
+    environment:
+      HF_TOKEN: ${HF_TOKEN:-}
+    volumes:
+      - hf-cache:/root/.cache/huggingface
+    ports: ["8000:8000"]
+
+volumes:
+  bidpilot-out:
+  hf-cache:
